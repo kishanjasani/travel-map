@@ -10,7 +10,6 @@ import "./index.css";
 function App() {
 	return (
 		<>
-			Travel Map
 			<BrowserRouter>
 				<Routes>
 				<Route path="/" element={<Home />} />
