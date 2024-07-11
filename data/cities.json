@@ -47,66 +47,6 @@
         "lng": "-2.13128394200588"
       },
       "id": 98443198
-    },
-    {
-      "id": "44c6",
-      "cityName": "La Fouillade",
-      "country": "France",
-      "emoji": "🇫🇷",
-      "date": "2024-07-11T13:44:04.395Z",
-      "notes": "",
-      "position": {
-        "lat": "44.24519901522129",
-        "lng": "2.0204475280343552"
-      }
-    },
-    {
-      "id": "eeaa",
-      "cityName": "el Pont de Bar",
-      "country": "Spain",
-      "emoji": "🇪🇸",
-      "date": "2024-07-11T13:45:10.713Z",
-      "notes": "fsdfdsfds",
-      "position": {
-        "lat": "42.391008609205045",
-        "lng": "1.6031923352267354"
-      }
-    },
-    {
-      "id": "033e",
-      "cityName": "Pati",
-      "country": "India",
-      "emoji": "🇮🇳",
-      "date": "2024-07-11T13:46:40.524Z",
-      "notes": "fdsfdsfds",
-      "position": {
-        "lat": "21.94304553343818",
-        "lng": "74.86899557553282"
-      }
-    },
-    {
-      "id": "ae4d",
-      "cityName": "Tchirozerine",
-      "country": "Niger (the)",
-      "emoji": "🇳🇪",
-      "date": "2024-07-11T13:48:58.539Z",
-      "notes": "fdsfdsfdsfds",
-      "position": {
-        "lat": "16.97274101999902",
-        "lng": "9.837188116139323"
-      }
-    },
-    {
-      "id": "18a3",
-      "cityName": "Al Quway‘iyah",
-      "country": "Saudi Arabia",
-      "emoji": "🇸🇦",
-      "date": "2024-07-11T13:49:28.251Z",
-      "notes": "fdsfds",
-      "position": {
-        "lat": "23.241346102386135",
-        "lng": "43.58025654868088"
-      }
     }
   ]
 }
