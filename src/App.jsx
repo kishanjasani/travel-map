@@ -14,6 +14,7 @@ import { CitiesProvider } from "./contexts/CitiesContext";
 
 import "./index.css";
 import { AuthProvider } from "./contexts/FakeAuthContext";
+import ProtectedRoute from "./pages/ProtectedRoute";
 
 
 function App() {
@@ -28,7 +29,11 @@ function App() {
 							<Route path="product" element={<Product />} />
 							<Route path="pricing" element={<Pricing />} />
 							<Route path="login" element={<Login />} />
-							<Route path="app" element={<AppLayout />}>
+							<Route path="app" element={
+								<ProtectedRoute>
+									<AppLayout />
+								</ProtectedRoute>
+							}>
 								<Route index element={<Navigate replace to="cities" />} />
 								{/* <Route index element={<CityList cities={cities} isLoading={isLoading} />} /> */}
 								<Route path="cities" element={<CityList />} />
