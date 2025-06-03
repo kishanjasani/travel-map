@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { MapContainer, TileLayer, Marker, Popup, useMap, useMapEvents } from 'react-leaflet'
 import { useEffect, useState } from "react";
 import { useNavigate } from 'react-router-dom';
@@ -19,9 +20,11 @@ function Map() {
 	} = useGeoLocation();
 	const [mapLat, mapLng] = useUrlLocation();
 
-	useEffect( function(){
-		if (mapLat && mapLng) setMapPosition([mapLat, mapLng]);
-	}, [mapLat, mapLng] );
+	useEffect(() => {
+	if (mapLat && mapLng) {
+		setMapPosition([Number(mapLat), Number(mapLng)]);
+	}
+	}, [mapLat, mapLng]);
 
 	useEffect( function() {
 		if ( geoLocationPosition ) {
@@ -74,5 +77,9 @@ function DetectClick() {
 		click: (e) => navigate(`form?lat=${e.latlng.lat}&lng=${e.latlng.lng}`),
 	});
 }
+
+ChangeCenter.propTypes = {
+	position: PropTypes.arrayOf(PropTypes.number).isRequired,
+};
 
 export default Map;

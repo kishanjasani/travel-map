@@ -10,17 +10,10 @@ import Message from "./Message";
 import Spinner from "./Spinner";
 import { useUrlLocation } from '../hooks/useUrlLocation';
 import DatePicker from "react-datepicker";
+import { convertToEmoji } from "../utils/emoji";
 
 import "react-datepicker/dist/react-datepicker.css";
 import { useCities } from "../contexts/CitiesContext";
-
-export function convertToEmoji(countryCode) {
-	const codePoints = countryCode
-		.toUpperCase()
-		.split("")
-		.map((char) => 127397 + char.charCodeAt());
-	return String.fromCodePoint(...codePoints);
-}
 
 const BASE_URL = 'https://api.bigdatacloud.net/data/reverse-geocode-client';
 

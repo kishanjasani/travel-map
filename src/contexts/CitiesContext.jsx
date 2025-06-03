@@ -1,9 +1,9 @@
+import PropTypes from 'prop-types';
 import { useEffect, useContext, useReducer, useCallback } from "react";
 import { createContext } from "react";
+import { BASE_URL } from "../constants";
 
 const CitiesContext = createContext();
-
-const BASE_URL = "http://localhost:9000";
 
 function useCities() {
 	const context = useContext(CitiesContext);
@@ -72,7 +72,6 @@ function CitiesProvider({ children }) {
 		cities,
 		isLoading,
 		currentCity,
-		error
 	} = state;
 
 	useEffect( function() {
@@ -171,5 +170,9 @@ function CitiesProvider({ children }) {
 		</CitiesContext.Provider>
 	);
 }
+
+CitiesProvider.propTypes = {
+	children: PropTypes.node.isRequired,
+};
 
 export { CitiesProvider, useCities };

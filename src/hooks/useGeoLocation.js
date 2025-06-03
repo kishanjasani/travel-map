@@ -17,7 +17,7 @@ export function useGeoLocation(defaultPosition = null) {
 				});
 				setIsLoading(false);
 			},
-			(error) => {
+			() => {
 				setIsLoading(false);
 			}
 		);

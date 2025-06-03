@@ -71,6 +71,30 @@
         "lat": "42.081916678306335",
         "lng": "0.3948550898976722"
       }
+    },
+    {
+      "id": "59a2",
+      "cityName": "Valluercanes",
+      "country": "Spain",
+      "emoji": "🇪🇸",
+      "date": "2025-06-03T12:34:00.257Z",
+      "notes": "fdsfdsfgdsds",
+      "position": {
+        "lat": "42.56926437219384",
+        "lng": "-3.09814453125"
+      }
+    },
+    {
+      "id": "d8f5",
+      "cityName": "Al Mithnab",
+      "country": "Saudi Arabia",
+      "emoji": "🇸🇦",
+      "date": "2025-06-03T12:34:11.072Z",
+      "notes": "fdgfdbgfvdgfd",
+      "position": {
+        "lat": "25.799891182088334",
+        "lng": "44.12109375"
+      }
     }
   ]
 }
